@@ -6,7 +6,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0"
             prefWidth="771.0" xmlns="http://javafx.com/javafx/23.0.1"
-            fx:controller="com.example.cdbl_try1.HelloController" xmlns:fx="http://javafx.com/fxml">
+            fx:controller="com.example.CDBL.HelloController" xmlns:fx="http://javafx.com/fxml">
    <children>
       <TextField layoutX="237.0" layoutY="127.0" />
       <TextField layoutX="237.0" layoutY="187.0" />

@@ -1,4 +1,4 @@
-package com.example.cdbl_try1;
+package com.example.CDBL;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
