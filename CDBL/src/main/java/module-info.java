@@ -4,6 +4,6 @@ module com.example.CDBL {
     requires java.desktop;
 
 
-    opens com.example.CDBL to javafx.fxml;
-    exports com.example.CDBL;
+    opens CdblUser to javafx.fxml;
+    exports CdblUser;
 }

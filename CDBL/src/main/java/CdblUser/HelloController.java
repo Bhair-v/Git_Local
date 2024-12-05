@@ -1,4 +1,4 @@
-package com.example.CDBL;
+package CdblUser;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

@@ -1,4 +1,4 @@
-package com.example.CDBL;
+package CdblUser;
 
 public class IndividualInvestor {
 }
