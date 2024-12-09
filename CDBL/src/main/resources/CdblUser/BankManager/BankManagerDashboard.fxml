@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CdblUser.BankManager">
+   <children>
+      <Label layoutX="32.0" layoutY="9.0" prefHeight="39.0" prefWidth="197.0" text="Bank Manager">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="53.0" text="I.D - " />
+      <Label layoutX="31.0" layoutY="86.0" text="Bank" />
+      <Label layoutX="32.0" layoutY="122.0" text="Branch" />
+      <TextField fx:id="BankManagerIDTextField" layoutX="77.0" layoutY="49.0" />
+      <TextField fx:id="BankTextField" layoutX="77.0" layoutY="82.0" />
+      <TextField fx:id="BankBranchTextField" layoutX="77.0" layoutY="118.0" />
+      <Button fx:id="openBOaccountButton" layoutX="413.0" layoutY="40.0" mnemonicParsing="false" onAction="#onActionOpenBOaccountButtonClick" text="Open BO Account" />
+      <Button fx:id="updateClientInfoButton" layoutX="413.0" layoutY="82.0" mnemonicParsing="false" onAction="#onActionupdateClientInfoButtonClick" text="Update Client Info" />
+      <Button fx:id="generateTaxReportButton" layoutX="413.0" layoutY="127.0" mnemonicParsing="false" onAction="#onActiongenerateTaxReportButtonClick" text="Generate Tax Report" />
+      <Button fx:id="TransferSecuritiesButton" layoutX="413.0" layoutY="175.0" mnemonicParsing="false" onAction="#onActionTransferSecuritiesButtonClick" text="Transfer securities" />
+      <Button fx:id="AssignRelationshipOfficerButton" layoutX="413.0" layoutY="219.0" mnemonicParsing="false" onAction="#onActionAssignRelationshipOfficerButtonClick" text="Assign Relationship Officer" />
+      <Button fx:id="GenarateComplianceReportButton" layoutX="413.0" layoutY="259.0" mnemonicParsing="false" onAction="#onActionGenarateComplianceReportButtonClick" text="Genarate Compliance Report" />
+      <Button fx:id="RespondToInquiryButton" layoutX="413.0" layoutY="301.0" mnemonicParsing="false" onAction="#onActionRespondToInquiryButtonClick" text="Respond To Inquiry" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="559.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateBOAccount">
+   <children>
+      <Label layoutX="7.0" layoutY="24.0" text="boAccountId " />
+      <Label layoutX="7.0" layoutY="65.0" text="accountType " />
+      <Label layoutX="7.0" layoutY="103.0" prefHeight="17.0" prefWidth="28.0" text="investorName " />
+      <Label layoutX="7.0" layoutY="145.0" text="dateOfBirth " />
+      <Label layoutX="7.0" layoutY="187.0" text="KYC" />
+      <Label layoutX="7.0" layoutY="227.0" text="Label" />
+      <Label layoutX="7.0" layoutY="266.0" text="Label" />
+      <Label layoutX="7.0" layoutY="306.0" text="Label" />
+      <Label layoutX="344.0" layoutY="24.0" text="Label" />
+      <Label layoutX="344.0" layoutY="60.0" text="Label" />
+      <Label layoutX="344.0" layoutY="103.0" text="Label" />
+      <Label layoutX="344.0" layoutY="146.0" text="Label" />
+      <Label layoutX="344.0" layoutY="186.0" text="Label" />
+      <Label layoutX="344.0" layoutY="227.0" text="Label" />
+      <Label layoutX="344.0" layoutY="265.0" text="Label" />
+      <Label layoutX="344.0" layoutY="306.0" text="Label" />
+      <TextField layoutX="90.0" layoutY="20.0" />
+      <TextField layoutX="90.0" layoutY="61.0" />
+      <TextField layoutX="90.0" layoutY="99.0" />
+      <TextField layoutX="90.0" layoutY="140.0" />
+      <TextField layoutX="90.0" layoutY="182.0" />
+      <TextField layoutX="90.0" layoutY="223.0" />
+      <TextField layoutX="90.0" layoutY="261.0" />
+      <TextField layoutX="90.0" layoutY="302.0" />
+      <TextField layoutX="405.0" layoutY="20.0" />
+      <TextField layoutX="405.0" layoutY="61.0" />
+      <TextField layoutX="405.0" layoutY="99.0" />
+      <TextField layoutX="405.0" layoutY="140.0" />
+      <TextField layoutX="405.0" layoutY="182.0" />
+      <TextField layoutX="405.0" layoutY="223.0" />
+      <TextField layoutX="405.0" layoutY="261.0" />
+      <TextField layoutX="405.0" layoutY="302.0" />
+      <Button layoutX="246.0" layoutY="507.0" mnemonicParsing="false" text="Verify and Create B0 Account" />
+      <Label layoutX="194.0" layoutY="390.0" prefHeight="41.0" prefWidth="274.0" text="Make it a form like structure">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
