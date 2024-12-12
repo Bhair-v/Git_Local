@@ -20,22 +20,22 @@
       <Label layoutX="8.0" layoutY="405.0" prefHeight="17.0" prefWidth="55.0" text="Address -" />
       <Label layoutX="72.0" layoutY="566.0" prefHeight="17.0" prefWidth="49.0" text="Shares -" />
       <TextField fx:id="BOAccountIDTextfield" layoutX="141.0" layoutY="248.0" />
-      <TextField fx:id="investorNameTextField" layoutX="136.0" layoutY="72.0" />
+      <TextField fx:id="InvestorNameTextField" layoutX="136.0" layoutY="72.0" />
       <TextField fx:id="KycTextField" layoutX="141.0" layoutY="316.0" />
       <TextField fx:id="EmailTextField" layoutX="136.0" layoutY="176.0" />
       <TextField fx:id="PhoneNumberTextfield" layoutX="136.0" layoutY="106.0" />
       <TextField fx:id="NomineeIDTextfield" layoutX="141.0" layoutY="360.0" prefHeight="25.0" prefWidth="149.0" />
       <TextField fx:id="AdressTextfield" layoutX="108.0" layoutY="401.0" prefHeight="25.0" prefWidth="483.0" />
       <TextField layoutX="125.0" layoutY="562.0" />
-      <Button layoutX="245.0" layoutY="653.0" mnemonicParsing="false" text="Verify and Create B0 Account" />
-      <Button layoutX="313.0" layoutY="248.0" mnemonicParsing="false" text="generate" />
-      <DatePicker layoutX="138.0" layoutY="143.0" />
+      <Button layoutX="245.0" layoutY="653.0" mnemonicParsing="false" onAction="#OnActionVerifyAndCreateBoAccount" text="Verify and Create B0 Account" />
+      <Button layoutX="313.0" layoutY="248.0" mnemonicParsing="false" onAction="#OnActionGenerateButtonClick" text="generate" />
+      <DatePicker fx:id="DOBdoj" layoutX="138.0" layoutY="143.0" />
       <Label layoutX="71.0" layoutY="485.0" prefHeight="17.0" prefWidth="65.0" text="Bonds-" />
-      <TextField layoutX="125.0" layoutY="481.0" />
-      <Button layoutX="312.0" layoutY="316.0" mnemonicParsing="false" text="Upload" />
-      <Button layoutX="165.0" layoutY="521.0" mnemonicParsing="false" text="Add more" />
-      <Button layoutX="165.0" layoutY="594.0" mnemonicParsing="false" text="Add more" />
-      <Button layoutX="315.0" layoutY="360.0" mnemonicParsing="false" text="Verify" />
+      <TextField fx:id="BondTextField" layoutX="125.0" layoutY="481.0" />
+      <Button layoutX="312.0" layoutY="316.0" mnemonicParsing="false" onAction="#OnActionKycUploadButtonClick" text="Upload" />
+      <Button layoutX="165.0" layoutY="521.0" mnemonicParsing="false" onAction="#OnActionBondsAddmoreButtonClick" text="Add more" />
+      <Button layoutX="165.0" layoutY="594.0" mnemonicParsing="false" onAction="#OnActionSharesAddmoreButtonClick" text="Add more" />
+      <Button layoutX="315.0" layoutY="360.0" mnemonicParsing="false" onAction="#OnActionNomineeIdButtonClick" text="Verify" />
       <Label layoutX="146.0" layoutY="14.0" prefHeight="43.0" prefWidth="375.0" text="BO Account Creation Form">
          <font>
             <Font name="System Bold Italic" size="29.0" />
@@ -43,11 +43,11 @@
       </Label>
       <Label layoutX="12.0" layoutY="285.0" prefHeight="17.0" prefWidth="124.0" text="Bank Account Number" />
       <TextField fx:id="BankAccountNumberTextField" layoutX="141.0" layoutY="281.0" />
-      <Button layoutX="312.0" layoutY="281.0" mnemonicParsing="false" text="Link" />
-      <Button layoutX="280.0" layoutY="481.0" mnemonicParsing="false" text="Link" />
-      <Button layoutX="280.0" layoutY="562.0" mnemonicParsing="false" text="Link" />
-      <Button layoutX="307.0" layoutY="176.0" mnemonicParsing="false" text="Link" />
+      <Button layoutX="312.0" layoutY="281.0" mnemonicParsing="false" onAction="#OnActionBankAccountNumberLinkButtonClick" text="Link" />
+      <Button layoutX="280.0" layoutY="481.0" mnemonicParsing="false" onAction="#OnActionBondLinkButtonClick" text="Link" />
+      <Button layoutX="280.0" layoutY="562.0" mnemonicParsing="false" onAction="#OnActionSharesLinkButtonClick" text="Link" />
+      <Button layoutX="307.0" layoutY="176.0" mnemonicParsing="false" onAction="#OnActionLinkEmailButtonClick" text="Link" />
       <Label layoutX="15.0" layoutY="215.0" text="Password" />
-      <TextField fx:id="EmailTextField1" layoutX="139.0" layoutY="211.0" />
+      <TextField fx:id="PasswordTextField" layoutX="139.0" layoutY="211.0" />
    </children>
 </AnchorPane>
