@@ -1,9 +1,18 @@
 package CdblUser;
+
+
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-public class IndividualInvestor {
+
+
+public class IndividualInvestor extends User {
+    public IndividualInvestor(String id, String name, String password, String email, String phone, String type) {
+        super(id, name, password, email, phone, type);
+    }
+
+
     @javafx.fxml.FXML
     private Button ViewPortofolioButton;
     @javafx.fxml.FXML
@@ -24,6 +33,8 @@ public class IndividualInvestor {
     private Button RequestInfoUpdateButton;
     @javafx.fxml.FXML
     private Button PlaceBuyOrderButton;
+
+
 
     @javafx.fxml.FXML
     public void onActionRequestInfoUpdateButtonClick(ActionEvent actionEvent) {
