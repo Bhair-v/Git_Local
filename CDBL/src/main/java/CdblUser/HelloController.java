@@ -1,9 +1,12 @@
 package CdblUser;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 
 import java.awt.event.ActionEvent;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class HelloController {
@@ -25,6 +28,9 @@ public class HelloController {
 
     ArrayList<BankManager> bankManagerArrayList;
     ArrayList<IndividualInvestor> individualInvestorArrayList;
+    @FXML
+    private AnchorPane mainPane;
+    private String s;
 
     @FXML
     public void initialize() {
@@ -39,37 +45,25 @@ public class HelloController {
     @FXML
     void onloginButtonClick(ActionEvent event) {
 
+
     }
 
     public void onfrgtpaswrdButtonClick(javafx.event.ActionEvent actionEvent) {
     }
 
     public void onloginButtonClick(javafx.event.ActionEvent actionEvent) {
-        String UserType, id, Password;
-        UserType = UserTypeComboBox.getValue();
-        id = UserIDField.getText();
-        Password = passwordField.getText();
-        if (UserType == "Bank Manager" ) {
-            for (BankManager bankManager : bankManagerArrayList) {
-
-            }
-
-        }
-        else if (UserType == "Individual Investor" ) {
-            for (IndividualInvestor investor : individualInvestorArrayList) {
-                if (User.loginVR(id, Password));
-            }
-
-        }
-        else if (id.length() == 5) {
-
-        }
-
+        loadFXML("CdblUser/BankManagerDashboard.fxml");
     }
+    private void loadFXML(String s) {
 
-    @Deprecated
-    public void onActionUserTypeComboBoxClick(ActionEvent actionEvent) {
+        try {
+
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("BankManagerDashboard.fxml"));
+            AnchorPane pane = loader.load();
+            mainPane.getChildren().setAll(pane); // Replace the content of the mainPane with the loaded FXML
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
-
-

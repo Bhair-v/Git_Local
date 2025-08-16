@@ -81,7 +81,7 @@ public class User {
         return id;
 
     }
-    public static boolean loginVR(String id, String password) {
+    public boolean loginVR(String id, String password) {
         if (this.getId().equals(id) && this.getPassword().equals(password)) {
             return true;
         }
